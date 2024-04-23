@@ -1,0 +1,338 @@
+/* BISMILLAHHIR RAHMANIR RAHIM */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* START OF NAV SECTION */
+
+#navbar {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2 ;
+    background-color: rgb(228, 85, 14);
+}
+
+.intro {
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 200px;
+}
+
+.intro-head {
+    padding-bottom: 5px;
+}
+
+.nav-list {
+    background-color: rgb(228, 85, 14);
+    width: 650px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 15px;  
+}
+
+.nav-list a {
+    text-decoration: none;
+    font-size: medium;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+
+.nav-list li:hover {
+    background-color: rgb(138, 59, 3);
+    cursor: pointer;
+}
+
+/* END OF NAV SECTION */
+/* START OF INTRO SECTION */
+
+
+.intro .intro-head {
+    color: whitesmoke;
+}
+
+.intro .intro-desc {
+    color: rgb(228, 85, 14);
+    
+}
+
+.intro-desc{
+    font-style: italic;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+/* END OF INTRO SECTION */
+/* START OF WELCOME SECTION */
+
+#welcome-section {
+    margin-top: 50px;
+    display: flex;
+    height: 100vh;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    padding: 0px 60px;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3);
+    text-align: center;
+    /* margin: 10px; */
+}
+
+.welcome h1 {
+    font-size: 25px;
+    margin: 5px;
+    color: whitesmoke;  
+}
+
+.welcome p {  
+    color: whitesmoke;
+    margin: 5px;
+    text-align: justify;
+    padding: 0px 10px;    
+}
+
+#web-developer h1 {
+    color: green;
+}
+
+#programmer h1 {
+    color: orange;
+}
+
+#bug-bounty h1 {
+    color: purple;
+}
+
+/* END OF WECLCOME SECTION */
+/* START OF MEDIA QUERY */
+
+@media only screen and (max-width: 400px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #welcome-section {
+        margin-top: 50px;
+        justify-content: first baseline;
+        height: calc(100% / 1);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #welcome-section {
+        justify-content:space-around;
+    }
+
+    .intro {
+        
+        display: none;
+    }
+    
+    .welcome {
+        margin-top: 40px;
+        justify-content: space-around;
+    }   
+}
+
+@media only screen and (max-width: 650px) {
+    .intro {
+        top: 175px;
+    }
+    
+    .welcome {
+        margin: 10px 10px;
+        height: calc(100% / 8);
+        width: calc(100% / 1.5);
+    }
+    #welcome-section{
+        flex-direction: column;
+        /* justify-content: center; */
+        
+    }   
+}
+
+/* END OF MEDIA QUERY */
+/* START PROJECT SECTION */
+
+#projects h2 {
+    display: block;
+}
+
+.projects-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    background-color: #47619b;
+    padding: 80px 60px;
+    box-sizing: border-box;
+}
+
+.projects-grid {
+    box-sizing: inherit;
+    text-align: center;
+    border: 1px solid red;
+    height: fit-content;
+    /* background: #313841; */  
+}
+
+.project-image {
+    height: calc(100% - 2);
+    width: 100%;
+    object-fit: cover;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+#project-section-head {
+    background-color: #47619b;   
+}
+
+.projects-section-header{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: black;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    font-family: sans-serif;
+    font-size: 2rem;
+    /* padding-top: 60px; */
+    /* background-color: #47619b; */
+}
+
+.project-title {
+    font-size: 20px;
+    padding: 1rem 0.3rem;
+    background-color: #313841;   
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+}
+
+.projects-grid a{
+    text-decoration: none;    
+    color: whitesmoke;
+}
+
+.project-title{
+    color: whitesmoke;
+}
+
+.project-title:hover{
+    background-color: rgb(228, 85, 14) ;
+}
+
+/* END OF PROJECT SECTION */
+/* START OF CONTACT SECTION */
+
+#contact{
+    background: linear-gradient(62deg, #e3e9ee 0%, #dcc2f7 100%);;
+}
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center; 
+}
+
+.contact-links{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-details{
+    font-size: 1.5rem;
+    padding: 10px; 
+}
+
+.contact-links a {
+    text-decoration: none; 
+    color: orchid;  
+}
+
+.contact-links a:hover {
+    color: black;
+}
+
+.contact-links i {
+    padding:0px 4px;
+}
+
+.contact-section-header {
+    margin-bottom: 1.5rem;
+}
+
+.contact-section-header h2{
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    font-weight: bold; 
+}
+
+.contact-section-header p {
+    font-style: italic;
+    font-weight: 300;
+    font-family: sans-serif;
+    color: rgb(228, 85, 14);
+}
+
+/* END OF CONTACT SECTION */
+/* START OF FOOTER SECTION */
+
+footer {
+    display: flex;
+    font-weight: 300;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(199, 182, 182);
+}
+
+footer p {
+    padding: 5px 0px;
+    font-family: sans-serif;
+}
+
+footer a{
+    color: rgb(228, 85, 14);
+}
+
+/* END OF FOOTER SECTION */
+/* ALHMADULLIHA */
